@@ -1,0 +1,23 @@
+[project]
+name = "call-me-maybe"
+version = "1.0.0"
+description = "A project about function calling using a LLM"
+authors = [
+  { name = "tbaricau", email = "tbaricau@student.42lehavre.fr" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "accelerate",
+    "numpy",
+    "pydantic",
+    "torch",
+    "transformers",
+    "huggingface_hub",
+]
+
+[project.optional-dependencies]
+dev = [
+    "flake8",
+    "mypy",
+    "pytest",
+]
